@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Fraunces", serif; */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #1F1F1F;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+/* Шапка сайта */
+.header-flex {
+    height: 78px;
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 26px;
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+nav a {
+    font-size: 15px;
+    color: #33383F;
+}
+
+nav a:hover {
+    color: black;
+    box-shadow: 0 1px 0 black;
+}
+
+.btn-logo {
+    display: flex;
+    gap: 31px;
+    align-items: center;
+}
+
+.btn-logo a {
+    font-size: 15px;
+    color: #0070A0;
+}
+
+.btn-logo a:hover {
+    color: black;
+    box-shadow: 0 1px 0 black;
+}
+
+.main-btn {
+    color: #fff;
+    font-size: 15px;
+    padding: 6px 20px;
+    background: #0070A0;
+    width: 139px;
+    height: 36px;
+}
+
+.main-btn:hover {
+    background: #033d56;
+    position: relative;
+    top: 2px;
+}
+
+/* Стили для Hero-блока */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 153px;
+    margin-bottom: 120px;
+}
+
+.text-hero {
+    flex: 0 0 50%;
+    max-width: 525px;
+}
+
+.text-hero h1 {
+    font-family: "Fraunces", serif;
+    font-size: 58px;
+    font-weight: 400;
+    width: 485px;
+    margin-bottom: 21px;
+}
+
+.text-hero p {
+    font-size: 20px;
+    width: 380px;
+    line-height: 1.8;
+    margin-bottom: 29px;
+}
+
+.text-hero a {
+    margin-left: 24px;
+    color: #0070A0;
+    font-size: 17px;
+}
+
+.text-hero a::after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 21px;
+    background-image: url('../img/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-left: 5px;
+
+    vertical-align: middle;
+}
+
+.text-hero a:hover {
+    color: black;
+}
+
+.text-hero a:hover::after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 21px;
+    background-image: url('../img/arrow-black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-left: 5px;
+
+    vertical-align: middle;
+}
+
+.img-hero {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.img-hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для блока с партнерами */
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 160px;
+}
+
+.partners p {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.partners .partners-img {
+    display: flex;
+    gap: 61px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Блок с привлечением */
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+    margin-bottom: 120px;
+}
+
+.information #block-1, .information #block-2, .information #block-3 {
+    flex: 1;
+    height: 250px;
+    padding: 32px 32px 40px 32px ;
+}
+
+.information #block-1 {background: #FAEA73;}
+.information #block-2 {background: cyan;}
+.information #block-3 {background: #F7CEDC;}
+
+.information #block-1 h2,
+.information #block-2 h2,
+.information #block-3 h2 {
+    margin-top: 8px;
+    margin-bottom: 11px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.information #block-1 p,
+.information #block-2 p,
+.information #block-3 p {
+    line-height: 1.8;
+}
+
+/* Блок с аккордеоном */
+.background {
+    height: 694px;
+    background: #F7F9FA;
+}
+
+.care-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.benefits-block {
+    max-width: 345px;
+    width: 100%;
+}
+
+.benefits-item {
+    border-bottom: 1px solid #C2CDD8;
+    border-top: 1px solid #C2CDD8;
+    padding: 20px 0;
+}
+
+.benefits-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.benefits-header:hover {
+    color: #006B99;
+
+}
+
+/* Убираем треугольник для Safari/Chrome */
+.benefits-header::-webkit-details-marker {
+    display: none;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 21px;
+}
+
+.header-left img {
+    width: 20px;
+    height: 20px;
+}
+
+.benefits-content {
+    padding-top: 16px;
+    padding-left: 35px;
+    line-height: 1.8;
+}
+
+.benefits-block h2 {
+    padding-top: 80px;
+    font-size: 40px;
+    width: 650px;
+    line-height: 1.4;
+    margin-bottom: 34px;
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+}
+
+/* Стили для блока: почему выбирают нас */
+
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.card-about-info {
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+}
+
+.about-header {width: 300px;}
+.about-header h2 {
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#about-block-1, #about-block-2, #about-block-3 {
+    width: 222px;
+}
+
+#about-block-1 {align-self: flex-end;}
+
+#about-block-1 h3, #about-block-2 h3, #about-block-3 h3 {
+    font-family: "Fraunces", serif;
+    font-size: 25px;
+    margin-bottom: 11px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+#about-block-1 p, #about-block-2 p, #about-block-3 p {
+    line-height: 1.6;
+}
+
+
+/* Блок с изображением и текстом */
+.background-1 {
+    background: #0070A0;
+    height: 550px;
+    margin-bottom: 120px;
+}
+
+.text-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0;
+}
+
+#text {
+    width: 500px;
+    color: #fff;
+}
+
+#header-text {width: 400px; margin-bottom: 18px;}
+
+#header-text h2 {
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#image img {
+    width: 382px;
+    height: 374px;
+}
+
+#main-text {width: 500px; margin-bottom: 20px;}
+
+#main-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#text-list {margin-bottom: 16px;}
+
+#text-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#text-list ul li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+#text-list ul li::before {
+    content: '';
+    background: url('../img/check-icon.png') no-repeat center / contain;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.btn-text-img {
+    background: #023950;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    margin-bottom: 120px;
+}
+
+.header-features{
+    width: 650px;
+}
+
+.header-features h2 {
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.header-features p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+#block-feature-1 img,
+#block-feature-2 img,
+#block-feature-3 img,
+#block-feature-4 img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 7px;
+}
+
+#block-feature-1,
+#block-feature-2,
+#block-feature-3,
+#block-feature-4 {
+    width: 235px;
+    height: 218px;
+}
+
+#block-feature-1 h3,
+#block-feature-2 h3,
+#block-feature-3 h3,
+#block-feature-4 h3 {
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+
+#block-feature-1 p,
+#block-feature-2 p,
+#block-feature-3 p,
+#block-feature-4 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+.background-card {height: auto; margin-bottom: 80px;}
+
+
+.card-block {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.card-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-block-header h2 {
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.card-block-header a {
+    font-size: 17;
+    color: #0070A0;
+    position: relative;
+    right: 32px;
+}
+
+.card-block-header a:hover {
+    color: black;
+    box-shadow: 0 1px 0 black;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+.card #card-1,
+.card #card-2,
+.card #card-3 {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.card-img img {
+    width: 100%;
+    height: 238px;
+}
+
+.card-text {
+    margin: 25px 24px;
+}
+
+.tags {
+    color: #2C90C9;
+    background: #E6F7FF;
+    padding: 3px 12px;
+}
+
+.card-text h3 {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 11px;
+}
+
+.card-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 13px;
+}
+
+.card-text data {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+
+.block-start {
+    background: #E6F7FF;
+    padding: 63px 64px;
+    margin-bottom: 80px;
+}
+
+.block-start h2 {
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.block-start p {
+    width: 503px;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 33px;
+}
+
+.tags-span {
+    margin-top: 20px;
+    display: flex;
+    width: 335px;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+#tags-1, #tags-2 {
+    font-size: 13px;
+    color: #626A72;
+}
+
+#tags-1::before, #tags-2::before {
+    content: '';
+    background: url('../img/check-gray-icon.png') no-repeat center / contain;
+    margin-right: 3px;
+    width: 13px;
+    height: 7px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-col {
+    flex: 0 0 auto;
+    max-width: 250px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 60px;
+    margin-left: auto;
+}
+
+.logo-footer a {
+    margin-bottom: 20px;
+}
+
+.logo-col .autor span {
+    font-size: 14px;
+    color: #1F1F1F;
+}
+
+.logo-col .autor span a {
+    color: #0070A0;
+}
+
+.logo-col .autor span a:hover {
+    color: black;
+    box-shadow: 0 1px 0 black;
+}
+
+.footer-col {
+    width: 217px;
+}
+
+.footer-right .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+.footer-right .footer-col ul a {
+    color: #626A72;
+    font-size: 13px;
+}
+
+.footer-right .footer-col ul a:hover {
+    color: black;
+    box-shadow: 0 1px 0 black;
+}
+
+.footer-right .footer-col ul a.active {
+    color: #1F1F1F;
+    font-size: 15px;
+    cursor: auto;
+    box-shadow: none;
+}
+
+.footer-right .form-col p.form-title {
+    color: #1F1F1F;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.footer-right .form-col p {
+    color: #1F1F1F;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.footer-right .form-col input {
+    width: 216px;
+    height: 33px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.footer-right .form-col input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.footer-right .form-col input:hover {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.footer-bottom {
+    display: flex;
+    margin-top: 36px;
+    margin-bottom: 32px;
+
+    justify-content: space-between;
+}
+
+.social-link {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom span {
+    color: #1F1F1F;
+    font-size: 13px;
+}
+
+.footer-bottom span a {
+    color: #0070A0;
+    font-size: 13px;
+}
+
+.footer-bottom span a:hover {
+    color: black;
+    box-shadow: 0 1px 0 black;
+}
+
+.footer-bottom .social-link img:hover {
+    cursor: pointer;
+}
