@@ -23,7 +23,6 @@ body {
 }
 
 
-/* Шапка сайта */
 .header-flex {
     height: 78px;
     margin-bottom: 140px;
@@ -86,7 +85,6 @@ nav a:hover {
     top: 2px;
 }
 
-/* Стили для Hero-блока */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -166,7 +164,6 @@ nav a:hover {
     height: auto;
 }
 
-/* Стили для блока с партнерами */
 .partners {
     display: flex;
     justify-content: center;
@@ -187,7 +184,6 @@ nav a:hover {
     align-items: center;
 }
 
-/* Блок с привлечением */
 .information {
     display: flex;
     justify-content: center;
@@ -221,7 +217,6 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* Блок с аккордеоном */
 .background {
     height: 694px;
     background: #F7F9FA;
@@ -259,7 +254,6 @@ nav a:hover {
 
 }
 
-/* Убираем треугольник для Safari/Chrome */
 .benefits-header::-webkit-details-marker {
     display: none;
 }
@@ -292,7 +286,6 @@ nav a:hover {
     font-weight: 400;
 }
 
-/* Стили для блока: почему выбирают нас */
 
 .about-info {
     display: flex;
@@ -333,8 +326,6 @@ nav a:hover {
     line-height: 1.6;
 }
 
-
-/* Блок с изображением и текстом */
 .background-1 {
     background: #0070A0;
     height: 550px;
